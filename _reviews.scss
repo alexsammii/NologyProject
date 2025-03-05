@@ -1,0 +1,50 @@
+@use 'variables';
+@use 'mixins';
+
+.reviews {
+    background: $secondary-color;
+    @include section-padding;
+    text-align: center;
+
+    &__container {
+        max-width: 950px;
+        margin: auto;
+    }
+
+    &__title {
+        font-size: 3rem;
+        color: $dark-color;
+        font-family: $font-accent;
+        margin-bottom: 2rem;
+    }
+
+    &__card {
+        margin-top: 1.5rem;
+        padding: 3rem;
+        border: 4px solid white;
+        background: lighten($secondary-color, 5%);
+        border-radius: $border-radius;
+        box-shadow: $box-shadow-light;
+        font-size: 1.7rem;
+        line-height: 2;
+        text-align: left;
+    }
+
+    &__quote {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 1rem;
+    }
+}
+
+// Responsive Design
+@include respond-to(md) {
+    .reviews {
+        padding: 4rem 2rem;
+
+        &__card {
+            font-size: 1.4rem;
+            padding: 2rem;
+        }
+    }
+}

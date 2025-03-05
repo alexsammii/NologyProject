@@ -1,0 +1,86 @@
+@use 'variables';
+@use 'mixins';
+
+.menu {
+    text-align: center;
+    padding: 4rem 3rem;
+
+    &__title {
+        font-size: 2.8rem;
+        color: $primary-color;
+        font-family: $font-accent;
+        margin-bottom: 2rem;
+    }
+
+    &__details {
+        margin: 1em 2em;
+        padding: 0.5rem;
+        background: $secondary-color;
+        cursor: pointer;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow-light;
+
+        summary {
+            font-size: 1.8rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+    &__grid {
+        @include menu-grid(3, 20px); // Apply the mixin for a 3-column layout
+        padding: 2rem;
+    }
+}
+
+// Menu Cards
+.card {
+    @include card(325px, 400px);
+
+    &__image {
+        width: 300px;
+        justify-content: center;
+    }
+
+    &__name {
+        text-align: center;
+        margin-top: 0.5rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    &__box {
+        @include card(325px, 400px);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+
+    &__center {
+        @include card(325px, 400px);
+    }
+
+    &__icon-text {
+        text-align: center;
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            margin-top: 10px;
+            padding-top: 10px;
+        }
+    }
+}
+
+// Responsive Design
+@include respond-to(md) {
+    .menu {
+        padding: 3rem 2rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+}

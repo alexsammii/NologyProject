@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pink Coffee Corner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Rammetto+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <div class="nav__logo">
+            <img src="assets/mug-hot-solid-pink.svg" alt="Coffee Mug Icon">
+        </div>
+        <ul class="nav__links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero__text">
+            <h2>The Pink Coffee Corner</h2>
+            <h3>Best Coffee in Melbourne</h3>
+            <a href="#reviews" class="btn">See Reviews</a>
+        </div>
+        <img class="image" src="assets/hero_image.jpg" alt="Cafe Interior">
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <h1 class="menu__title h1">Our Menu</h1>
+        <div class="details">
+        <details>
+            <summary>Food</summary>  
+        <article class="card__box">
+            <img class="card__image" src="./assets/Chocolate Cupcake.png" alt="chocolate cupcake">
+            <h2 class="card__name">Chocolate Cupcake</h2>
+            <div class="icon-text">
+                <img class= "icon" src="/assets/leaf-solid.svg" alt="vegan"> <span>Vegan</span>
+            </div>
+        </article>
+        <article class="card__box">
+            <img class="card__image" src="./assets/donuts.jpg" alt="donuts">
+            <h2 class="card__name">Donuts</h2>
+            <div class="icon-text">
+                <img class= "icon" src="/assets/wheat-awn-circle-exclamation-solid.svg" alt="GF"> <span>Gluten Free</span>
+            </div>
+        </article>
+        <article class="card__box">
+            <img class="card__image" src="./assets/raspberry_cupcake.jpg" alt="rasp cupcake">
+            <h2 class="card__name">Raspberry Cupcake</h2>
+            <div class="icon-text">
+                <img class= "icon" src="/assets/leaf-solid.svg" alt="Vegan"> <span>Vegan</span>
+                <img class= "icon" src="/assets/wheat-awn-circle-exclamation-solid.svg" alt="GF"> <span>Gluten Free</span>
+            </div>
+        </article>
+        <article class="card__box">
+            <img class="card__image" src="./assets/vanilla_cake.jpg" alt="vanilla cake">
+            <h2 class="card__name">Vanilla Cake</h2>
+            <div class="icon-text">
+                <img class= "icon" src="/assets/egg-solid.svg" alt="egg"> <span>Contain Eggs</span>
+            </div>
+        </article>
+        <article class="card__box">
+            <img class="card__image" src="./assets/cheesecake.jpg" alt="cheesecake">
+            <h2 class="card__name">Cheesecake</h2>
+            <div class="icon-text">
+                <img class= "icon" src="/assets/egg-solid.svg" alt="egg"> <span>Contain Eggs</span>
+                <img class= "icon" src="/assets/cow-solid.svg" alt="dairy"> <span>Contains Dairy</span>
+            </div>
+        </article>
+        </details> 
+        </div>
+    </section>
+    <details class="details">
+        <summary>Drinks</summary>
+        <article class="card__box">
+            <img class="card__image" src="./assets/coffee.jpg" alt="coffee">
+            <h2 class="card__name">Flat White</h2>
+        </article>
+        <article class="card__box">
+            <img class="card__image" src="./assets/green_smoothie.jpg" alt="healthy">
+            <h2 class="card__name">Green Smoothie</h2>
+            <div class="icon-text">
+                <img class= "icon" src="/assets/leaf-solid.svg" alt="vegan"> <span>Vegan</span>
+            </div>
+        </article>
+        <article class="card__box">
+            <img class="card__image" src="./assets/peanut_smoothie.jpg" alt="protein">
+            <h2 class="card__name">Peanut Butter Smoothie</h2>
+            <div class="icon-text">
+                <img class= "icon" src="/assets/hand-dots-solid.svg" alt="nuts"> <span>Contains Nuts</span>
+            </div>
+        </article>
+    </details>
+
+</section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><img src="assets/quote-left-solid.svg" alt="Quote Left" class="quote"> The Pink Coffee Corner is amazing! Cozy ambiance, perfect lattes, and friendly staff. The avocado toast is a must-try. <img src="assets/quote-right-solid.svg" alt="Quote Right" class="quote"></p>
+            <p>- Sarah L.</p>
+        </div>
+        <div class="review">
+            <p><img src="assets/quote-left-solid.svg" alt="Quote Left" class="quote"> The Pink Coffee Corner is my favorite! Perfect mocha, tasty almond croissant, and a welcoming atmosphere. Free Wi-Fi is a bonus. Can't wait to return! <img src="assets/quote-right-solid.svg" alt="Quote Right" class="quote"></p>
+            <p>- Jenny B.</p>
+        </div>
+        <div class="review">
+            <p><img src="assets/quote-left-solid.svg" alt="Quote Left" class="quote"> Great spot for coffee lovers. Smooth flat white and delicious cake. It can get crowded at lunchtime, but worth the visit for the quality and friendly service. <img src="assets/quote-right-solid.svg" alt="Quote Right" class="quote"></p>
+            <p>- John M.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="topic">Select a Topic:</label>
+            <select id="topic" name="topic" required>
+                <option value="">Please select a topic...</option>
+                <option value="bookings">Bookings</option>
+                <option value="orders">Online Orders</option>
+                <option value="complaints">Complaints</option>
+            </select>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__left">
+            <img src="assets/mug-hot-solid-white.svg" alt="Coffee Mug Icon">
+            <p>Copyright 2025</p>
+        </div>
+        <a href="#"><img src="assets/square-instagram-brands-solid.svg" alt="Instagram" class="icon"></a>
+    </footer>
+</body>
+</html>
